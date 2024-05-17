@@ -5,10 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <title>hola</title>
+  <img src="image.png" alt="" width="100" height="100">
 </head>
 
 <body>
-  <form action="controlador" method="get">
+  <p><h1>buenos dias</h1></p>
+  <p>
+    <A href="primerapag.html">primero
+      <link rel="stylesheet" href="bienvenido">
+  </p>
+  </A>
+  <p>
+    <A href="segundapag">segundo
+      <link rel="stylesheet" href="bienvenido">
+    </A>
+  </p>
+  <p>
+    <A href="tercerapag">tercero
+      <link rel="stylesheet" href="bienvenido">
+    </A>
+  <form action="controlador" method="post">
     <div>
       <label for="edad">Seleccione su edad</label>
       <input type="number" step="1.5" min="0" max="17" value="5" name="edad" disabled id="edad">
@@ -21,17 +38,53 @@
     <br>
     <div>
       <label for="coloor">Seleccione un color</label>
-      <input type="color" placeholder="Seleccione un color" id=coloor>
+      <input type="color" placeholder="Seleccione un color" id=coloor name="Color">
     </div>
     <br>
     <div>
       <label for="email">Escriba su email</label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" required name="Correo">
     </div>
     <br>
     <div>
       <label for="tele">Escriba su telefono</label>
-      <input type="text" id="tele" pattern="[0-9]{0,10}" required>
+      <input type="text" id="tele" pattern="[0-9]{0,10}" required name="telefono">
+    </div>
+    <br>
+    <div>
+      <label for="ciu">Seeccione su ciudad</label>
+      <select name="ciudad" id="ciu" disabled >
+        <option value="1">Giron</option>
+        <option value="2" selected>Bucaramanga</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="radio">Selecione su Genero</label>
+      <label for="Masculino">
+      <input type="radio" name="Genero" id="Masculino" value="Masculino" checked>
+      Masculino</label>
+      <label for="femenino">
+      <input type="radio" name="Genero" id="femenino" value="femenino" >
+      femenino</label>
+    </div>
+    <div>
+      <label for="">
+        <input type="checkbox" name="habilidad" checked value="HTML"> HTML
+      </label>
+      <label for="">
+        <input type="checkbox" name="habilidad" checked value="GIT"> GIT
+      </label>
+      <label for="">
+        <input type="checkbox" name="habilidad" checked value="CLI"> CLI
+      </label>
+      <label for="">
+        <input type="checkbox" name="habilidad" value="JS"> JS
+      </label>
+    </div>
+
+    <div>
+      <input accept="image" type="file" multiple>
     </div>
 
     <button type="submit">guardar</button>
